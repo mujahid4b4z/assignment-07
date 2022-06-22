@@ -1,0 +1,19 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+h1,ul{
+    margin: 20px 0px 0px 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+h1{
+    font-weight: 700;
+}
+ul{
+    line-height: 26px;
+}
+span{
+    font-weight: 700;
+}
