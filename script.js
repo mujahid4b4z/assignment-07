@@ -1,4 +1,4 @@
-alert("Press OK to Enter");
+//alert("Press OK to Enter");
 
 //VARIABLES
 var y;
@@ -262,3 +262,60 @@ var stats=["Karnataka","Karela","Goa","Tamilnadu"];
 for(var names of stats){
     console.log(names);
 }
+//Functions
+// Function Parameter
+function greet(name) {
+    console.log("hi" + name);
+}
+greet("Anna");
+greet("Bob");
+//The Return Statement
+function add(a,b){
+    var c=a+b;
+    return c;
+}
+var res=add(5,4);
+console.log(res);
+
+//Call back function
+function callbackFunction(name) {
+    console.log("hello + name");
+}
+function outerFunction(callback)
+{
+    let name = prompt("please enter your name");
+    callback(name);
+}
+outerFunction(callbackFunction);
+
+//HOISTING 
+//Variable Hoisting
+console.log(height);
+var height = 15;
+
+//Function Hoisting
+calculateAge(1995);
+function calculateAge(year) {
+    console.log(2020-year);
+}
+
+//ARRAYS
+var fruits = ["Apple","Banana","Mango","Orange","Papaya"];
+console.log(fruits[0]);
+console.log(fruits[1]);
+
+//Creating a String from an Array
+var colors = ["Red","Green","Blue"];
+console.log(colors.toString());
+console.log(colors.join());
+console.log(colors.join(""));
+console.log(colors.join("-"));
+console.log(colors.join(","));
+
+//Merging Two or More Arrays
+var color1 = ["Red","Green","Blue"];
+var color2 = ["White","Orange"];
+var colors = color1.concat(color2);
+console.log(colors);
+["Red","Green","Blue","White","Orange"]
+
